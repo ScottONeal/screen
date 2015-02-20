@@ -1,4 +1,4 @@
-# vim
+# screen
 My .screen file.
 
 ```
