@@ -1,0 +1,26 @@
+# disable startup message
+startup_message off
+
+# set scrollback lines
+defscrollback 5000
+
+# automatically detach on a hangup
+autodetach on
+
+# turn off visual bells ... annoying!
+vbell off
+
+# create these windows on startup
+screen -t "Doc"           0
+screen -t "Main"          1
+screen -t "Secondary"     2
+screen -t "Misc"          3
+screen -t "Server"        4
+screen -t "Bash"          5
+
+# select this window on startup
+select 1
+
+# display status line
+hardstatus alwayslastline "%{.kC} <%H> %{.Gk} %-w%{.kW}%n %t%{-}%+w %=%{.kg} [%l] %{.kw} %D %d %M %Y %{.kC}%c:%s"
+
